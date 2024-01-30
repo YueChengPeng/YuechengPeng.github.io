@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background-color: #070707;
+    font-size: calc(1728vw / 1728);
+}
+
+header {
+    color: rgb(231, 231, 231);
+    padding-top: 4rem;
+    position: sticky;
+    background-color: #070707;
+    top: 0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(231, 231, 231);
+    font-size: 2rem;
+    margin: 1rem 0 .4rem 0;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(231, 231, 231);
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(231, 231, 231);
+}
+
+strong {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(231, 231, 231);
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.galleryATag:hover,
+.galleryATag:active,
+.galleryATag:focus {
+    outline: none;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.headertag {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: rgb(139, 127, 221);
+}
+
+.headertagGroup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.horizontal-divider {
+    opacity: .2;
+}
+
+.academicImg {
+    width: 75%;
+    height: auto;
+    box-sizing: border-box;
+    transition: outline .3s ease-in-out;
+    background-color: #070707;
+}
+
+.academicImg:hover {
+    outline: 2px solid white;
+}
+
+.profileImg {
+    width: 60%;
+    height: auto;
+}
+
+.profileDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profileText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.galleryImg {
+    display: block;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    transition: outline .3s ease-in-out;
+    background-color: #070707;
+}
+
+.galleryImg:hover {
+    outline: 2px solid white;
+}
+
+.galleryDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textOverlay {
+    background-color: aliceblue;
+
+}
+
+.imageContainer:hover .textOverlay {
+    opacity: 1;
+}
+
+.footerinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #070707;
+}
