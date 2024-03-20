@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Yuecheng</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div class="col-lg-8">
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6" style="display: flex;">
+                            <h3>I2C Wearable <a class="h3italic taglink" href="../index.html">@ Yuecheng</a></h3>
+                        </div>
+                        <div class="col-lg-6 headertagGroup">
+                            <a class="headertag taglink" href="../index.html">← back to homepage</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.2rem;"></div>
+
+                <div class="border-top mb-5 horizontal-divider"></div>
+
+            </header>
+
+            <div class="row projectGallerySectionHeader">
+                <div class="col-lg-6 profileText">
+                    <div class="projectIntro">
+                        <p>⌚️ This is a wearable device equipped with motion (MPU6050, six DoF accelerometer, and
+                            gyroscope), temperature, humidity, and air pressure (BME280) sensing capabilities, and with
+                            an OLED display and vibration motor outputs. As a demo application, the motion sensor
+                            readings were used to calculate the number of jumping jacks the wearer did.</p>
+
+                        <p class="underline">🔆 Highlights</p>
+                        <ul>
+                            <li>Modular I2C physical architecture.</li>
+                            <ul>
+                                <li>Suitable for hardware prototyping when using many I2C devices (<span
+                                        class="underline">breakout boards</span> are in use and you don't have
+                                    time/effort to develop an entire integrated PCB).</li>
+                                <li>There's a tradeoff between the vertical size and horizontal size.</li>
+                            </ul>
+                            <li>PCB rapid fabrication and iteration with the LPKF ProtoLaser U4, designed with Fusion
+                                360.</li>
+                            <li>Motion sensing and skin-contact temperature&humidity sensing, suitable for wearable
+                                sports scenarios.</li>
+                        </ul>
+                        <p>🔗 Github: <a class="taglink" href="https://github.com/YueChengPeng/techin512-wearable">https://github.com/YueChengPeng/techin512-wearable</a></p>
+                        <p>🍾 This is the final project of the TECHIN 512 course @ GIX, UW.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 profileDiv">
+                    <img class="projectTeaser" src="../img/I2C_Wearable/teaser.png" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-4">
+                    <p>The four brass spacer standoff screws (Conductive on the outside surface. There shouldn't be any
+                        insulation coatings on these screws in use) on the corners are <span class="underline">Vcc, GND,
+                            SCL, and SDA</span>. Electrical contact was established by stacking all the PCB layers and
+                        screw them tight.</p>
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/pcb_back.png" alt="">
+                </div>
+                <!-- <div class="col-lg-2"></div> -->
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/oled_decolor.png" alt="">
+                    <p style="text-align: center;">OLED PCB layer</p>
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/sensor_decolor.png" alt="">
+                    <p style="text-align: center;">Sensor PCB layer, MPU6050 and BME280</p>
+
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/mcu_decolor.png" alt="">
+                    <p style="text-align: center;">MCU PCB layer, along with other I2C incompatible components (vibration motor, battery, and switch)</p>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-1"></div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/sideview.png" alt="">
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/size.png" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <p>Since the purpose of this method was directly using breakout boards, it's hard to reduce the
+                        cumulative volume of the result device. This method, however, was capable of sacrificing the
+                        vertical space to save horizontal space and thus suitable for, maybe, wearables, where the
+                        skin-contact area constituted a larger concern. </p>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-4">
+                    <p>I2C devices can be on both sides of the PCB. The BME sensor's direction is reversed to measure
+                        the temperature of the skin.</p>
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/backside.png" alt="">
+                </div>
+                <!-- <div class="col-lg-2"></div> -->
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-1"></div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/innerPack.png" alt="">
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-4">
+                    <p>Display temperature reading and jump counts.</p>
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/I2C_Wearable/wearing_2.png" alt="">
+                </div>
+                <!-- <div class="col-lg-2"></div> -->
+            </div>
+
+            <div class="border-top mt-5 mb-3 horizontal-divider"></div>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row mb-5">
+                        <p style="text-align: center;">Copyright 2024 Yuecheng Peng</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
