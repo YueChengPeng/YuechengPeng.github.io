@@ -1,0 +1,5 @@
+debug
+- capacitive touch sensing: don't touch the conductive part while touch the computer. It'll cause reading lag. If you
+see the reading significantly becomes slower, it's because of this. Restart the MCU to fix it.
+- Serial communication with the Processing (the IDE, not js library): close the Arduino IDE serial monitor/plotter. If
+the serial data still cannot be catched by the Processing, plug out the USB and plug in again.
