@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Yuecheng</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div class="col-lg-8">
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6" style="display: flex;">
+                            <h3>Knit Sensors <a class="h3italic taglink" href="../index.html">@ Yuecheng</a></h3>
+                        </div>
+                        <div class="col-lg-6 headertagGroup">
+                            <a class="headertag taglink" href="../index.html">← back to homepage</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.2rem;"></div>
+
+                <div class="border-top mb-5 horizontal-divider"></div>
+
+            </header>
+
+            <div class="row projectGallerySectionHeader">
+                <div class="col-lg-6 profileText">
+                    <div class="projectIntro">
+                        <p>🧶 This is a knitted sensor demo collection done during my research at the Machine Agency
+                            with Hannah.</p>
+
+                        <p class="underline">🔆 Highlights</p>
+                        <ul>
+                            <li>Embedded sensing capabilities in textiles/garments, including touch, pressure, humidity,
+                                and stretch sensing.</li>
+                            <li>All samples knitted on the Silver Reed Sk840 machine.</li>
+
+                            <li><strong>Intarsia</strong> is used to create colorworks,
+                                which requires heavy manual yarn changing & arrangement on the Silver Reed machine.
+                                However, it is useful in terms of creating isolated sensing areas compared with other
+                                colorwork techniques such as Fair Isle, tuck, and slip stitch.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 profileDiv">
+                    <img class="projectTeaser" src="../img/knitsensor/sock_1.png" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <h1>Capacitive Touch Sensors</h1>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-4">
+                    <p>With intarsia, we can have knitted "icons", such as ⬅︎⬆︎⬇︎➡︎.</p>
+                    <p>With this, we can create a textile control pad. In this demo, I ran conductive yarn along with
+                        the dark blue yarn while knitting. In the following samples, the same method was applied in the
+                        knitting process of sensing areas.</p>
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/touchpad.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/touchpad_2.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/volume.JPG" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <p>Or, we can knit a textile volume controller, which can be integrated into your favorite sweater
+                        maybe.</p>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-4">
+                    <p>We can also knit more complex patterns, such as letters.</p>
+                    <p>For example, I have a on-off switch touch pad here.</p>
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/on_off.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/on_off_2.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <h1>Humidity Sensors</h1>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/humidity_1.JPG" alt="">
+                    <p style="margin-top: 1rem;">I also found an interdigital electrode pattern can be used as a
+                        humidity sensor.</p>
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/humidity_2.JPG" alt="">
+                    <p style="margin-top: 1rem;">When water is present on the textile, it would form a conductive path
+                        between the two electrodes, resulting in dropping resistance.</p>
+
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <h1>Pressure Sensors</h1>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/pressure_1.JPG" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <p>The same interdigital electrode pattern can be used as a pressure sensor. The more you press, the
+                        lower the resistance would be.</p>
+                    <p>It basically connects part of the human body (which is conductive) between the electrodes. Higher
+                        the pressure, better the contact, lower the resistance. The interdigital pattern simply
+                        increases the area of the skin that is connected between the two electrodes (which probably
+                        produces better measurable results).</p>
+                    <p>Limitations of this method include: 1. It requires direct contact between the human skin and the
+                        electrode. 2. It is prone to humidity crosstalks. 3. The baseline of the sensor would be
+                        dependent on which hand it touching it (would vary from person to persom).</p>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-4">
+                    <p>With the same pattern, I knitted a sock that can sense pressure of different areas on the foot
+                        (e.g. tone & heel).</p>
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/sock_3.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <video class="project_fullWidth" src="../img/knitsensor/sock.mp4" alt="" controls>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/sock_2_1.JPG" alt="">
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/sock_2_2.JPG" alt="">
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/sock_2_3.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <h1>Stretch/Bend Sensors</h1>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/mitten_1.JPG" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <p>The same pressure sensing interdigital pattern can also be utilized to sense stretch/bend.</p>
+                    <p>Long as the garment is tight enough, when you bend the joint, this movement will always translate
+                        to the increase of pressure on that joint, which can therefore be sensed.</p>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <video class="project_fullWidth" src="../img/knitsensor/mitten.mp4" alt="" controls>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/mitten_2_1.JPG" alt="">
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/mitten_2_2.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/mitten_3_1.JPG" alt="">
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/mitten_3_2.JPG" alt="">
+                </div>
+                <div class="col-lg">
+                    <img class="project_fullWidth" src="../img/knitsensor/mitten_3_3.JPG" alt="">
+                </div>
+            </div>
+            
+
+
+
+            <div class="border-top mt-5 mb-3 horizontal-divider"></div>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row mb-5">
+                        <p style="text-align: center;">Copyright 2024 Yuecheng Peng</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

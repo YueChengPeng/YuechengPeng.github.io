@@ -77,6 +77,16 @@ a {
     border: none;
 }
 
+.dropdown-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #070707;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
 .galleryATag:hover,
 .galleryATag:active,
 .galleryATag:focus {
@@ -212,6 +222,7 @@ a.taglink:active {
 .imageContainer:hover .textOverlay {
     opacity: 1;
 }
+
 
 .footerinfo {
     display: flex;
