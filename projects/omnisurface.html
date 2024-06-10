@@ -17,11 +17,11 @@
 <body>
     <div style="display: flex; justify-content: center;">
         <div class="col-lg-8">
-            <header id="header">
+            <header id="header" style="z-index: 99;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6" style="display: flex;">
-                            <h3>I2C Wearable <a class="h3italic taglink" href="../index.html">@ Yuecheng</a></h3>
+                            <h3>OmniSurface <a class="h3italic taglink" href="../index.html">@ Yuecheng, Wanling, Yi</a></h3>
                         </div>
                         <div class="col-lg-6 headertagGroup">
                             <a class="headertag taglink" href="../index.html">← back to homepage</a>
@@ -37,110 +37,104 @@
             <div class="row projectGallerySectionHeader">
                 <div class="col-lg-6 profileText">
                     <div class="projectIntro">
-                        <p>⌚️ This is a wearable device equipped with motion (MPU6050, six DoF accelerometer, and
-                            gyroscope), temperature, humidity, and air pressure (BME280) sensing capabilities, and with
-                            an OLED display and vibration motor outputs. As a demo application, the motion sensor
-                            readings were used to calculate the number of jumping jacks the wearer did.</p>
+                        <p>🫳 This is an IoT device capable of turning passive surfaces into interactive inputs.
+                            It can sense different gestures on various surfaces, e.g.
+                            knocking, tapping, fist bumping, etc. It can also sense different objects that are
+                            interacting with the surface, e.g. interact with hands, pencils, mugs, etc.
+                        </p>
 
                         <p class="underline">🔆 Highlights</p>
                         <ul>
-                            <li>Modular I2C physical architecture.</li>
-                            <ul>
-                                <li>Suitable for hardware prototyping when using many I2C devices (<span
-                                        class="underline">breakout boards</span> are in use and you don't have
-                                    time/effort to develop an entire integrated PCB).</li>
-                                <li>There's a tradeoff between the vertical size and horizontal size.</li>
-                            </ul>
-                            <li>PCB rapid fabrication and iteration with the LPKF ProtoLaser U4, designed with Fusion
-                                360.</li>
-                            <li>Motion sensing and skin-contact temperature&humidity sensing, suitable for wearable
-                                sports scenarios.</li>
+                            <li>
+                                Highly integrated hardware design; software architecture fully functional and scalable
+                                on the Azure Cloud.
+                            </li>
+
+                            <li>
+                                Customized gestures: users can define their own gestures, and
+                                add new data to the training dataset to customize their machine learning classifier.
+                            </li>
+                            <li>
+                                We envision this novel input can be useful in promoting accessibility, e.g. people who
+                                cannot perform accurate gestures on traditional tangible interfaces (e.g. rotate a knob)
+                                might find it easier to interact with a larger surface with possible higher tolerance.
+                                It also has potential applications in the gaming industry.
+                            </li>
                         </ul>
-                        <p>🔗 Github: <a class="taglink" href="https://github.com/YueChengPeng/techin512-wearable">https://github.com/YueChengPeng/techin512-wearable</a></p>
-                        <p>🍾 This is the final project of the TECHIN 512 course @ GIX, UW.</p>
+
+                        <p class="underline">⚠️ Limitations</p>
+                        <ul>
+                            <li>
+                                The accuracy of the classifier is highly dependent on what gestures users define and the
+                                data size. More research should be done to improve the accuracy on a small training
+                                dataset.
+                            </li>
+                            <li>
+                                Research should also be done to optimize the hardware: do we need two different sensors?
+                                Does adding a higher sampling rate and resolution ADC help to improve the ML accuracy?
+                            </li>
+
+
+                        </ul>
+
+                        <p>🔗 Github: <a class="taglink"
+                                href="https://github.com/OmniSurface">https://github.com/OmniSurface</a>
+                        </p>
+                        <p>🍾 This is the final project of the TECHIN 515 course @ GIX, UW. This is a group project in
+                            collaboration with Wanling and Yi. I was responsible for the
+                            design concept iteration, hardware implementation and cloud service development.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 profileDiv">
-                    <img class="projectTeaser" src="../img/I2C_Wearable/teaser.png" alt="">
+                    <img class="projectTeaser" src="../img/omnisurface/teaser.png" alt="">
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/BvffxSwTvvw?vq=hd1080" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="row projectGallerySection">
                 <div class="col-lg-4">
-                    <p>The four brass spacer standoff screws (Conductive on the outside surface. There shouldn't be any
-                        insulation coatings on these screws in use) on the corners are <span class="underline">Vcc, GND,
-                            SCL, and SDA</span>. Electrical contact was established by stacking all the PCB layers and
-                        screw them tight.</p>
+                    <p>
+                        The software pipeline incorporates the control over a smart home device (a lamp with
+                        different colors). Different gestures can be used to turn on/off different colors of the LED.
+                    </p>
                 </div>
                 <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/pcb_back.png" alt="">
+                    <img class="project_fullWidth" src="../img/omnisurface/smarthome_1.jpg" alt="">
                 </div>
                 <!-- <div class="col-lg-2"></div> -->
             </div>
 
             <div class="row projectGallerySection">
                 <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/oled_decolor.png" alt="">
-                    <p style="text-align: center;">OLED PCB layer</p>
-                </div>
-                <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/sensor_decolor.png" alt="">
-                    <p style="text-align: center;">Sensor PCB layer, MPU6050 and BME280</p>
-
-                </div>
-                <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/mcu_decolor.png" alt="">
-                    <p style="text-align: center;">MCU PCB layer, along with other I2C incompatible components (vibration motor, battery, and switch)</p>
-                </div>
-            </div>
-
-            <div class="row projectGallerySection">
-                <div class="col-lg-1"></div>
-                <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/sideview.png" alt="">
-                </div>
-                <div class="col-lg-1"></div>
-            </div>
-
-            <div class="row projectGallerySection">
-                <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/size.png" alt="">
+                    <img class="project_fullWidth" src="../img/omnisurface/pcb.jpeg" alt="">
                 </div>
                 <div class="col-lg-4">
-                    <p>Since the purpose of this method was directly using breakout boards, it's hard to reduce the
-                        cumulative volume of the result device. This method, however, was capable of sacrificing the
-                        vertical space to save horizontal space and thus suitable for, maybe, wearables, where the
-                        skin-contact area constituted a larger concern. </p>
+                    <p>
+                        The combination use of piezoelectric sensors and bone conduction MEMS microphones can pick up
+                        both obvious and subtle vibrations on the surface. The data collected from both sensors will be
+                        amplified by a dual-channel amplifier and then fed into the ESP32S3, which will send the data to
+                        the Azure Funcion App for further processing & classification.
+                    </p>
                 </div>
             </div>
 
             <div class="row projectGallerySection">
                 <div class="col-lg-4">
-                    <p>I2C devices can be on both sides of the PCB. The BME sensor's direction is reversed to measure
-                        the temperature of the skin.</p>
+                    <p>
+                        The mockup smart home lamp is controlled by ESP32S3 and Blynk.
+                    </p>
                 </div>
                 <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/backside.png" alt="">
+                    <img class="project_fullWidth" src="../img/omnisurface/lamp_PCB.png" alt="">
                 </div>
-                <!-- <div class="col-lg-2"></div> -->
-            </div>
-
-            <div class="row projectGallerySection">
-                <div class="col-lg-1"></div>
-                <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/innerPack.png" alt="">
-                </div>
-                <div class="col-lg-1"></div>
-            </div>
-
-            <div class="row projectGallerySection">
-                <div class="col-lg-4">
-                    <p>Display temperature reading and jump counts.</p>
-                </div>
-                <div class="col-lg">
-                    <img class="project_fullWidth" src="../img/I2C_Wearable/wearing_2.png" alt="">
-                </div>
-                <!-- <div class="col-lg-2"></div> -->
             </div>
 
             <div class="border-top mt-5 mb-3 horizontal-divider"></div>
