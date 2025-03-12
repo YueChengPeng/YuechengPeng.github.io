@@ -97,6 +97,16 @@ a {
     color: #000;
 }
 
+a.underlinetag{
+    text-decoration: underline;
+}
+a.underlinetag:hover,
+a.underlinetag:active,
+a.underlinetag:focus {
+    /* add glowing effect */
+    text-shadow: 0 5px 30px #FFFFFF;
+    color: #FFFFFF;
+}
 
 .headertag {
     margin-left: 2rem;
