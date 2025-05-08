@@ -58,6 +58,14 @@ p.subtitle {
     color: rgb(170, 170, 170);
 }
 
+p.papertitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: rgb(231, 231, 231);
+}
+
 .mt-3 {
     margin-bottom: 0.4rem;
 }
@@ -255,7 +263,7 @@ a.taglink:active {
     width: 100%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
 }
 
 .button:hover {
