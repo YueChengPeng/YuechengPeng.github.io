@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRPY5SCE0Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WRPY5SCE0Y');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Yuecheng</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div class="col-lg-8">
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6" style="display: flex;">
+                            <h3>Knit Sensors <a class="h3italic taglink" href="../index.html">@ Yuecheng, Jerry,
+                                    Ruiqing, Sam, Jassie</a></h3>
+                        </div>
+                        <div class="col-lg-6 headertagGroup">
+                            <a class="headertag taglink" href="../index.html">← back to homepage</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.2rem;"></div>
+
+                <div class="border-top mb-5 horizontal-divider"></div>
+
+            </header>
+
+            <div class="row projectGallerySectionHeader">
+                <div class="col-lg-6 profileText">
+                    <div class="projectIntro">
+                        <p>👀 This is our MSTI Launch Project, conducted in collaboration with the <a
+                                class="underlinetag" href="https://make4all.org/" target="_blank">Make4All Group</a>,
+                            advised by Jerry Cao (PhD student) and <a class="underlinetag"
+                                href="https://www.cs.washington.edu/people/faculty/jennifer-mankoff/"
+                                target="_blank">Jennifer Mankoff</a>(PI), along with Ruiqing Wang, Sam Wong, and Ying
+                            He.
+                            I served as the lead for the MSTI team. The project focused on improving eyedrop
+                            self-administration for individuals with motor and/or visual disabilities.
+                        </p>
+
+                        <p>
+                            In this project, I was responsible for all hardware prototyping and assisted in developing
+                            the computer vision pipeline to detect successful eyedrop administration, as well as
+                            conducting user studies.
+                        </p>
+
+                        <p class="underline">🔆 Highlights</p>
+                        <ul>
+                            <li>Conducted interviews with eyedrop users with low vision and motor disabilities to
+                                understand their needs and challenges.</li>
+                            <li>Developed multiple prototypes based on user feedback and evolving design requirements.
+                            </li>
+                            <li>Integrated key features into the final prototype, including: 1️⃣ aiming assistance
+                                2️⃣ automatic eyedrop dispensing 3️⃣ feedback on successful self-administration.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 profileDiv">
+                    <img class="projectTeaser" style="width: 70%;" src="../img/eyedrop/device.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="row projectGallerySection">
+                <div>
+                    <p>We conducted interviews with 15 low vision and motor disabilities to understand eyedrop
+                        challenges and performed thematic analysis on the transcripts.</p>
+                    <p>We found several key challenges in eyedrop self-administration.</p>
+                    <ol>
+                        <li><strong>Aiming:</strong> Older adults with low vision or reduced dexterity often struggle to
+                            align the
+                            eyedrop and keep stable with the eye.</li>
+                        <li><strong>Squeezing:</strong> Limited hand strength or arthritis hinders elderly individuals
+                            from squeezing eye
+                            drop bottles effectively.
+                        </li>
+                        <li><strong>Uncertainty:</strong> Uncertainty in drop application, only relying on sensation,
+                            often leading to
+                            over- or under-dosing.
+                        </li>
+                    </ol>
+                    <p>
+                        We also found that existing eyedrop aids fail to address these challenges simultaneously.
+                    </p>
+                    <p>
+                        In response, I developed following prototypes:
+                    </p>
+                </div>
+            </div>
+
+
+            <div>
+
+            </div>
+
+            <div class="projectGallerySection">
+                <p>To address the squeezing challenge, I developed a ratchet mechanism that converts a single
+                    squeeze into smaller, incremental steps of actuation.
+                </p>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <img class="project_fullWidth" src="../img/eyedrop/rachet_1.png" alt="">
+                    </div>
+                    <div class="col-lg">
+                        <video class="project_fullWidth" src="../img/eyedrop/rachet.mp4" alt="" controls></video>
+                        <p>
+                            ⬆️ this is how it works
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-4">
+                    <p>
+                        However, to achieve smaller actuation steps, the 3D-printed ratchet teeth needed to be very
+                        fine, which caused them to slip under load (e.g., when pressing the eyedrop bottle).
+                    </p>
+                    <p>
+                        To address this issue, I redesigned the mechanism with concentric circular stages. As motion
+                        shifts from the outer to the inner radius, the linear displacement per rotation decreases
+                        proportionally to the radius, achieving finer actuation steps. This configuration also enables
+                        the outer ratchet teeth to be larger and mechanically stronger, reducing the likelihood of
+                        slipping or deformation under load.
+                    </p>
+                    <p>
+                        However, since the step forward is discrete, it's challenging to control the eyedrop to dispense
+                        the exact desired amount.
+                    </p>
+                </div>
+
+                <div class="col-lg">
+                    <video class="project_fullWidth" src="../img/eyedrop/rachet_gear.mp4" alt="" controls></video>
+                </div>
+            </div>
+
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-4">
+                    <img class="project_fullWidth" src="../img/eyedrop/motor.png" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <video class="project_fullWidth" src="../img/eyedrop/motor.mp4" alt="" controls></video>
+                </div>
+                <div class="col-lg">
+                    <p>
+                        To enable continuous squeezing, I incorporated a stepper motor-driven actuation system capable
+                        of
+                        precisely controlling displacement.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <p>
+                        I integrated the motorized squeezing mechanism into a handheld device that also provides aiming
+                        assistance through a cap that rests around the eye for alignment.
+                    </p>
+                    <p>
+                        In a later iteration, I added a camera (connected to a Raspberry Pi) to the device to monitor
+                        whether the eyedrop was successfully dispensed into the eye.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <img class="project_fullWidth" src="../img/eyedrop/device_1.png" alt="">
+                </div>
+                <div class="col-lg-3">
+                    <img class="project_fullWidth" src="../img/eyedrop/device_2.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="row projectGallerySection">
+                <div class="col-lg-8">
+                    <video class="project_fullWidth" src="../img/eyedrop/one_drop.mp4" alt="" controls></video>
+                </div>
+
+                <div class="col-lg">
+                    <p>
+                        I used <strong>Otsu thresholding</strong> to detect the presence of an eyedrop in the camera
+                        feed, enabling a
+                        closed-loop system that automatically dispenses a single drop each time the user presses the
+                        trigger button.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <div class="col-lg">
+                    <p>
+                        I also applied <strong>Canny edge detection</strong> to identify the border of the eyedrop and
+                        fitted a circle to the extracted edges to track the drop’s trajectory. When the device is
+                        properly aligned with the eye, successful administration is detected when the drop’s trajectory
+                        intersects the eye area.
+                    </p>
+                </div>
+
+                <div class="col-lg-8">
+                    <video class="project_fullWidth" src="../img/eyedrop/cv.mp4" alt="" controls></video>
+                </div>
+            </div>
+
+            <div class="row projectGallerySection">
+                <p>Check out our video!</p>
+                <video class="project_fullWidth" src="../img/eyedrop/main.mp4" alt="" controls></video>
+            </div>
+
+            <div class="row projectGallerySection">
+                <p>Explore the full poster below:</p>
+                <iframe class="project_fullWidth" src="../img/eyedrop/poster.pdf#toolbar=0&navpanes=0"
+                    title="Eyedrop Poster" style="width: 100%; min-height: 1000px;" loading="lazy"></iframe>
+            </div>
+
+    
+
+
+            <div class="border-top mt-5 mb-3 horizontal-divider"></div>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row mb-5">
+                        <p style="text-align: center;">Copyright 2024 Yuecheng Peng</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
